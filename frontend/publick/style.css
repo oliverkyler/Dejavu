@@ -1,0 +1,139 @@
+.body-container {
+  height: 93vh;
+  width: 100%;
+}
+
+/* گالری محصولات - استایل‌های اصلی */
+.collection-gallery {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========== حالت باز شده (وقتی روی محصول کلیک شد) ========== */
+.collection-gallery.open .main-picture {
+  margin-right: 5px !important;
+  transform: rotate(0deg) !important;
+  margin-bottom: 0 !important;
+  width: 18vw !important;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-picture {
+  width: 120px;
+  height: 80%;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-right: -118px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* اولین برگه سمت راست - بدون margin منفی */
+.main-picture:first-child {
+  margin-right: 0;
+}
+
+/* زاویه‌بندی متقارن از مرکز - حالت عادی (موبایل) */
+.main-picture:nth-child(1) {
+  transform: rotate(47deg);
+  z-index: 1;
+  margin-bottom: 85px;
+  background-image: url(../publick/Assets/images/1.jpg);
+  background-size: cover;
+}
+
+.main-picture:nth-child(2) {
+  transform: rotate(22.5deg);
+  z-index: 2;
+  margin-bottom: 40px;
+  background-image: url(../publick/Assets/images/2.jpg);
+  background-size: cover;
+}
+
+.main-picture:nth-child(3) {
+  transform: rotate(0deg);
+  z-index: 3;
+  margin-bottom: 0;
+  background-image: url(../publick/Assets/images/3.jpg);
+  background-size: cover;
+}
+
+.main-picture:nth-child(4) {
+  transform: rotate(-22.5deg);
+  z-index: 2;
+  margin-bottom: 44px;
+  background-image: url(../publick/Assets/images/4.jpg);
+  background-size: cover;
+}
+
+.main-picture:nth-child(5) {
+  transform: rotate(-47deg);
+  z-index: 1;
+  margin-bottom: 85px;
+  margin-right: -118px;
+  background-image: url(../publick/Assets/images/5.jpg);
+  background-size: cover;
+}
+
+/* سایه عمیق‌تر برای برگه‌های کناری */
+.main-picture:nth-child(1),
+.main-picture:nth-child(5) {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* جلوگیری از margin-right برای اولین عکس در حالت باز */
+.collection-gallery.open .main-picture:first-child {
+  margin-right: 0 !important;
+}
+
+/* تنظیم فاصله بین محصولات در حالت باز */
+.collection-gallery.open {
+  gap: 5px;
+}
+
+/* اثر هاور روی محصولات */
+.main-picture:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.collection-gallery.open .main-picture {
+  width: 75px;
+  margin-right: 3px !important;
+}
+
+.collection-gallery.open .main-picture:first-child {
+  margin-right: 0 !important;
+}
+
+/* تنظیم زاویه موبایل */
+.main-picture:nth-child(1) {
+  transform: rotate(40deg);
+  margin-bottom: 70px;
+}
+
+.main-picture:nth-child(2) {
+  transform: rotate(20deg);
+  margin-bottom: 35px;
+}
+
+.main-picture:nth-child(4) {
+  transform: rotate(-20deg);
+  margin-bottom: 35px;
+}
+
+.main-picture:nth-child(5) {
+  transform: rotate(-40deg);
+  margin-bottom: 70px;
+}
