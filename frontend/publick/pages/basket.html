@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEJAVU</title>
+    <link rel="stylesheet" href="../../shared/main.css" />
+    <link rel="stylesheet" href="../styles/basket.css" />
+    <link rel="stylesheet" href="../../shared/list-products.css" />
+  </head>
+  <body>
+    <div class="basket-container">
+      <div class="basket-header">
+        <h2>سبد خرید</h2>
+        <span class="item-count">3 محصول</span>
+      </div>
+
+      <div class="basket-content">
+        <div class="basket-items">
+          <div class="body-basket">
+            <div class="box-product">
+              <div class="product-card">
+                <div class="product-image product-n1"></div>
+                <div class="product-info">
+                  <h3 class="product-name">محصول شماره 1</h3>
+                  <p class="product-desc">توضیحات کوتاه محصول</p>
+                  <div class="basket-product-footer">
+                    <span class="basket-product-price">2,500,000 تومان</span>
+                    <span class="basket-product-price-off"
+                      >2,000,000 تومان</span
+                    >
+                    <div class="product-actions">
+                      <span class="number-text">تعداد:</span>
+
+                      <div class="purchase-section">
+                        <div class="quantity-selector">
+                          <button class="qty-btn" onclick="decreaseQty()">
+                            -
+                          </button>
+                          <input
+                            type="number"
+                            id="quantity"
+                            value="1"
+                            min="1"
+                            max="10"
+                            readonly
+                          />
+                          <button class="qty-btn" onclick="increaseQty()">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-product">
+              <div class="product-card">
+                <div class="product-image product-n1"></div>
+                <div class="product-info">
+                  <h3 class="product-name">محصول شماره 2</h3>
+                  <p class="product-desc">توضیحات کوتاه محصول</p>
+                  <div class="basket-product-footer">
+                    <span class="basket-product-price">2,500,000 تومان</span>
+                    <span class="basket-product-price-off"
+                      >2,000,000 تومان</span
+                    >
+                    <div class="product-actions">
+                      <span class="number-text">تعداد:</span>
+
+                      <div class="purchase-section">
+                        <div class="quantity-selector">
+                          <button class="qty-btn" onclick="decreaseQty()">
+                            -
+                          </button>
+                          <input
+                            type="number"
+                            id="quantity"
+                            value="1"
+                            min="1"
+                            max="10"
+                            readonly
+                          />
+                          <button class="qty-btn" onclick="increaseQty()">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-product">
+              <div class="product-card">
+                <div class="product-image product-n1"></div>
+                <div class="product-info">
+                  <h3 class="product-name">محصول شماره 3</h3>
+                  <p class="product-desc">توضیحات کوتاه محصول</p>
+                  <div class="basket-product-footer">
+                    <span class="basket-product-price">2,500,000 تومان</span>
+                    <span class="basket-product-price-off"
+                      >2,000,000 تومان</span
+                    >
+                    <div class="product-actions">
+                      <span class="number-text">تعداد:</span>
+
+                      <div class="purchase-section">
+                        <div class="quantity-selector">
+                          <button class="qty-btn" onclick="decreaseQty()">
+                            -
+                          </button>
+                          <input
+                            type="number"
+                            id="quantity"
+                            value="1"
+                            min="1"
+                            max="10"
+                            readonly
+                          />
+                          <button class="qty-btn" onclick="increaseQty()">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="basket-summary">
+          <div class="summary-row">
+            <span>جمع کل:</span>
+            <span>7,500,000 تومان</span>
+          </div>
+          <div class="summary-row">
+            <span>تخفیف:</span>
+            <span class="discount">-1,500,000 تومان</span>
+          </div>
+          <div class="summary-row total-price">
+            <span>قابل پرداخت:</span>
+            <span>6,000,000 تومان</span>
+          </div>
+          <button class="checkout-btn">پرداخت نهایی</button>
+        </div>
+      </div>
+    </div>
+    <div class="tabbar-container">
+      <div class="tabbar">
+        <li>
+          <a href="../index.html" class="tabbar-link">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 9L12 3L21 9V20H15V14H9V20H3V9Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+            <span>خانه</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="tabbar-link">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="7"
+                height="7"
+                rx="1.5"
+                stroke="white"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <rect
+                x="14"
+                y="3"
+                width="7"
+                height="7"
+                rx="1.5"
+                stroke="white"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <rect
+                x="3"
+                y="14"
+                width="7"
+                height="7"
+                rx="1.5"
+                stroke="white"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <rect
+                x="14"
+                y="14"
+                width="7"
+                height="7"
+                rx="1.5"
+                stroke="white"
+                stroke-width="1.5"
+                fill="none"
+              />
+            </svg>
+            <span>دسته بندی</span>
+          </a>
+        </li>
+        <li>
+          <a href="basket.html" class="tabbar-link">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6H20L18 15H7L6 6ZM6 6L5 3H2"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+              <circle
+                cx="8"
+                cy="18"
+                r="1.5"
+                stroke="white"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <circle
+                cx="17"
+                cy="18"
+                r="1.5"
+                stroke="white"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <line
+                x1="10"
+                y1="9"
+                x2="16"
+                y2="9"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            <span>سبد خرید</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="tabbar-link">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="8"
+                r="4"
+                stroke="white"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <path
+                d="M5 20V19C5 15.7 7.7 13 11 13H13C16.3 13 19 15.7 19 19V20"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                fill="none"
+              />
+            </svg>
+            <span>پروفایل</span>
+          </a>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>
